@@ -3,27 +3,27 @@
   <head>
   <link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" />
-  <script type='text/javascript' src='javascripts/app.js'></script>
+  <!-- <script type='text/javascript' src='javascripts/main.js'></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-  
-    <script src="main.js" type="text/babel" />
+
   	<div class='center container'>
 		<h1 class='center'>Rock, Paper, Scissors</h1>
 		<h3 class='center'>User Choice:</h3>
 	
 		<div class='row'>
-			<div class='userSelect col m4' onClick='userChoice("rock");'>
+			<div class='userSelect col m4' id='rock'>
 				<img src='./images/rock.png' alt='Rock' style='width:200px;'>
 			</div>
 			
-			<div class='userSelect col m4' onClick='userChoice("paper");'>
+			<div class='userSelect col m4' id='paper'>
 				<img src='./images/paper.jpg' alt='Paper' style='width:220px;'>
 			</div>
 	
-			<div class='userSelect col m4' onClick='userChoice("scissors");'>
+			<div class='userSelect col m4' id='scissors'>
 				<img src='./images/scissors.jpg' alt='Scissors' style='width:200px;'>
 			</div>
 	
@@ -50,8 +50,9 @@
 			<h5 class='center col m4' id='ties'>0</h5>
 		</div>
 		<div class='row'>
-		<button class='col s2 offset-s5 waves-effect waves-light btn-large' id='reset' onClick='reset();'>Reset</button>
+		<button class='col s2 offset-s5 waves-effect waves-light btn-large' id='reset'>Reset</button>
 		</div>
 
+    <script src="javascripts/main.js" type="text/babel" />
   </body>
 </html>
